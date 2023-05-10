@@ -1,10 +1,86 @@
-header{
-    font-family: 'Roboto', sans-serif;
-    background-color: #EAC926;
-
-}
 body {
     font-family: 'Roboto', sans-serif;
+}
+header {
     background-color: #EAC926;
+}
 
+header p {
+    text-align: center
+}
+
+header nav ul li a{
+    font-size: 12px;
+    text-decoration: none;
+    color:#000;
+}
+
+header nav ul li {
+      list-style-type: none;  
+}
+
+header .buscador div.input {
+    background-color: white;
+    border: solid 1px black;
+    color: #666
+}
+
+header .buscador div.lupa i {
+    background-color: white;
+    border: solid 1px black;
+    color: #666;
+}
+
+header div.burger-menu i{
+    background-color:#1259c3;
+    color: white;
+    font-size: 20px;
+    margin:10px 0px 10px 0px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header div.burger-menu{
+        text-align: center ;
+}
+
+body p{
+    font-size: 12px;
+}
+body h3{
+    font-size: 24px;
+}
+body p.precio {
+    font-size: 18px;
+}
+body p.descuentos {
+    font-size: 16px;
+}
+body p.descripciones{
+    font-size: 16px;
+}
+
+footer section {
+    font-size: 12;
+    color:#666;
+    text-align: center;
+    line-height: 0%
+}
+
+footer section p.icono {
+    color: #1259c3;
+    text-align: center;
+    font-size: 2em;
+}
+
+footer section p.detalle {
+    color: #666;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 10px 
+}    
+
+footer section.copyright{
+    padding: 10px;
+    margin: 20px;
 }
