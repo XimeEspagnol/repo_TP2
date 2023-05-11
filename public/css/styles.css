@@ -1,14 +1,22 @@
 body {
     font-family: 'Roboto', sans-serif;
+}    
+body p{
+    font-size: 12px;
 }
+
 header {
     background-color: #EAC926;
+    width: 100vw;
 }
 
 header p {
     text-align: center
 }
 
+.logo{
+    width: 35%;
+}
 header nav ul li a{
     font-size: 12px;
     text-decoration: none;
@@ -17,6 +25,9 @@ header nav ul li a{
 
 header nav ul li {
       list-style-type: none;  
+}
+header nav ul {
+    margin-bottom: 0px;  
 }
 
 header .buscador div.input {
@@ -39,48 +50,119 @@ header div.burger-menu i{
     padding: 10px;
     border-radius: 5px;
 }
+header nav{
+    display: none;
+}
 
 header div.burger-menu{
-        text-align: center ;
+    text-align: center ;
+    margin: auto;
+    display: block;
 }
 
-body p{
-    font-size: 12px;
+main {
+    width: 90vw;
 }
-body h3{
+
+main h3{
     font-size: 24px;
+    text-align: center;
 }
-body p.precio {
+main p.precio {
     font-size: 18px;
 }
-body p.descuentos {
+main p.descuentos {
     font-size: 16px;
+    color: #39b54a;    
 }
-body p.descripciones{
-    font-size: 16px;
+.banner {
+    width: 100vw
 }
 
-footer section {
+main section article h4.descripciones{
+    font-size: 16px;
+    color:#666;
+    display: none
+}
+
+main section article {
+       margin: auto;
+       margin-bottom: 10px;
+       border:1px solid #ebebeb;
+       text-align: left;
+}
+.info-art{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+}
+.foto{
+    text-align: center;
+    margin: auto;
+    width: 90%;
+}
+main section article div.foto img{
+    text-align: center;
+    margin: auto;
+    width: 90%;
+}
+
+main section article div i{
+    color: #39b54a;
+    padding: 10px;
+    border: 1px solid #39b54a;
+    border-radius: 100%;
+}
+
+
+footer article {
     font-size: 12;
     color:#666;
     text-align: center;
-    line-height: 0%
+    line-height: 1em
+}
+footer article h4{
+    line-height: 0px;
 }
 
-footer section p.icono {
+footer article p.icono {
     color: #1259c3;
     text-align: center;
     font-size: 2em;
+    line-height: 0px;
 }
 
-footer section p.detalle {
+footer article p.detalle {
     color: #666;
     font-size: 12px;
     text-align: center;
     margin-bottom: 10px 
 }    
 
-footer section.copyright{
+footer article.copyright{
     padding: 10px;
-    margin: 20px;
+    text-align: left;
+}
+
+
+@media (min-width:361px){
+    main section article h4.descripciones{
+        display: block;    
+    }
+    header nav{
+        display: block;
+    }
+    header div.burger-menu{
+        text-align: center ;  
+        display: none;
+        margin: auto
+    }
+}
+
+@media (min-width:769px){
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    main section article div.foto img{
+        max-width: 770px;
+    }
 }
