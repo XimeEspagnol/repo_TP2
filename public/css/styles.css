@@ -23,7 +23,8 @@ header {
     align-items: center;
 }
 
-.logo, .buscador{
+.link-logo,
+.buscador {
     width: 50%;
     max-width: 300px;
     padding: 10px;
@@ -34,9 +35,11 @@ header {
     justify-content: center;
 
 }
-.buscador input{
+
+.buscador input {
     width: 80%;
 }
+
 header .buscador div.input {
     background-color: white;
     border: solid 1px black;
@@ -99,20 +102,23 @@ header div.burger-menu {
     margin: auto;
     display: block;
 }
-.left-navbar{
+
+.left-navbar {
     width: 55%;
 }
-.right-navbar{
-    width:45%
+
+.right-navbar {
+    width: 45%
 }
 
 
 /* MAIN */
-.main-home{
+.main-home {
     background-color: #ebebeb;
     display: flex;
     margin: auto;
 }
+
 .main-section section {
     width: 90vw;
     margin: 0 10px;
@@ -139,7 +145,11 @@ main section article div i {
     position: absolute;
     right: 20px;
     top: -15px;
-    color: #39b54a
+    color: #39b54a;
+    transition: all 400ms;
+}
+main section article div i:hover {
+    transform: rotate(-90deg);
 }
 
 main .info-art {
@@ -165,12 +175,18 @@ main .info-art {
     width: 100vw;
 }
 
-
-
 main section article h4.descripciones {
     font-size: 16px;
     color: #666;
     display: none
+}
+
+main section article:hover {
+    .descripciones {
+        margin-top: 5px;
+        display: block
+    }
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 main section article {
@@ -179,6 +195,7 @@ main section article {
     border: 1px solid #ebebeb;
     text-align: left;
     background-color: white;
+    transition: all 400ms;
 }
 
 .foto {
@@ -244,13 +261,14 @@ label {
     justify-content: center;
 }
 
-.selecciones div{
+.selecciones div {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 80%;
 }
-.selecciones label{
+
+.selecciones label {
     margin-left: 10px;
     margin-bottom: 0;
 }
@@ -283,20 +301,26 @@ label {
 }
 
 .botonReset {
-    background-color:rgb(170, 27, 27);
+    background-color: rgb(170, 27, 27);
     color: #FFF;
 }
-.botonLogin{
+
+.botonLogin {
     text-align: center;
-    background-color: #1259c3;
+    background-color: #356dc0;
     padding: 5px;
 }
+.botonLogin:hover{
+    background-color: #0022AA.;
+}
+
 .password {
     margin-top: 10px;
 }
-.olvidar a{
+
+.olvidar a {
     font-size: 0.7em;
-    color:#666;
+    color: #666;
     text-decoration: none;
 }
 
@@ -359,7 +383,7 @@ footer article.copyright {
         font-size: 14px;
     }
 
-    .logo,
+    .link-logo,
     .buscador,
     .copy-header {
         max-width: 33%;
@@ -373,9 +397,11 @@ footer article.copyright {
         display: flex;
         justify-content: space-between;
     }
-    .left-navbar{
+
+    .left-navbar {
         margin-right: 10px;
     }
+
     header nav ul li {
         display: flex;
         justify-content: space-between;
@@ -388,11 +414,6 @@ footer article.copyright {
 
     header nav li a {
         font-size: 13%;
-    }
-
-    main section article h4.descripciones {
-        display: block;
-        margin-top: 5px;
     }
 
     .productos {
@@ -432,15 +453,13 @@ footer article.copyright {
         align-items: center;
     }
 
-
-
     .copy-header {
         max-width: none;
         font-size: 18px;
         font-weight: 400;
     }
 
-    .logo,
+    .link-logo,
     .buscador,
     .copy-header {
         max-width: 35%;
