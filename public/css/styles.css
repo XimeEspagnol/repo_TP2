@@ -211,6 +211,7 @@ main section article {
     margin-bottom: 20px;
     font-size: 12px;
     background-color: #b6b4b4;
+    box-shadow: 2px 2px 5px 2px #666;
 }
 
 form div {
@@ -225,6 +226,10 @@ form div {
 
 .text-field {
     padding: 5px;
+}
+
+.text-field:hover, .text-field:focus{
+    background-color:#ebebeb;    
 }
 
 .text-div {
@@ -323,7 +328,7 @@ footer {
 }
 
 footer article {
-    font-size: 12;
+    font-size: 11;
     color: #666;
     text-align: center;
     line-height: 1em;
@@ -333,13 +338,12 @@ footer article {
 
 footer article h4 {
     margin: auto;
-
 }
 
 footer article p.icono {
     color: #1259c3;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.7em;
     line-height: 0px;
     margin: 0;
     transition: all 500ms;
