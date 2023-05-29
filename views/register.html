@@ -46,13 +46,13 @@
         <!--Formulario-->
         <form class="formularios" action="/" method="GET">
             <div class="text-div">
-                <input type="text" name="nombreCompleto" placeholder="Nombre y apellido" class="text-field">
+                <input type="text" required name="nombreCompleto" placeholder="Nombre y apellido" class="text-field">
             </div>
             <div class="text-div">
-                <input type="text" name="usuario" placeholder="Nombre de usuario" class="text-field">
+                <input type="text" required name="usuario" placeholder="Nombre de usuario" class="text-field">
             </div>
             <div class="text-div">
-                <input type="email" name="email" placeholder="e-mail" class="text-field">
+                <input type="email" required name="email" placeholder="e-mail" class="text-field">
             </div>
             <div class="fecha-nac">
                 <label for="nacimiento">Fecha de nacimiento:</label>
@@ -100,10 +100,10 @@
                 <input type="file" name="fotoPerfil" accept=".jpg, .png" id="foto">
             </div>
             <div class="text-pass password">
-                <input type="password" name="password" placeholder="Contraseña" class="text-field">
+                <input type="password" required name="password" placeholder="Contraseña" class="text-field">
             </div>
             <div class="text-div">
-                <input type="password" name="confirma-pass" placeholder="Confirmar contraseña" class="text-field">
+                <input type="password" required name="confirma-pass" placeholder="Confirmar contraseña" class="text-field">
             </div>
             <div class="botones">
                 <button type="submit" class="botonForm botonSubmit">Guardar</button>
